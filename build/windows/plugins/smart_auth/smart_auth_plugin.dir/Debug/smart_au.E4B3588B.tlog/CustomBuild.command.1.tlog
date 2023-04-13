@@ -1,0 +1,10 @@
+^C:\USERS\SUSHI\ONEDRIVE\DESKTOP\OFFICE PROJECT\ZAKIRA\WINDOWS\FLUTTER\EPHEMERAL\.PLUGIN_SYMLINKS\SMART_AUTH\WINDOWS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/sushi/OneDrive/Desktop/office project/zakira/windows" "-BC:/Users/sushi/OneDrive/Desktop/office project/zakira/build/windows" --check-stamp-file "C:/Users/sushi/OneDrive/Desktop/office project/zakira/build/windows/plugins/smart_auth/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

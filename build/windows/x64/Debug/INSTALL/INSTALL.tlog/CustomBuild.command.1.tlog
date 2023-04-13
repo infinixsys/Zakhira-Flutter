@@ -1,0 +1,10 @@
+^C:\USERS\SUSHI\ONEDRIVE\DESKTOP\OFFICE PROJECT\ZAKIRA\BUILD\WINDOWS\CMAKEFILES\54E8C1B3878602CA6BEE7924190B9258\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

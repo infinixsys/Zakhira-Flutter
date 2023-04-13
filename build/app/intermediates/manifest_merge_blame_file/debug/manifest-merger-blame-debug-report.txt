@@ -1,0 +1,428 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.zakira"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:5:5-66
+15-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:5:22-64
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:3:5-80
+16-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:3:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:4:5-81
+17-->C:\Users\sushi\OneDrive\Desktop\office project\zakira\android\app\src\main\AndroidManifest.xml:4:22-78
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+18-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+19-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+19-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+20-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:5-82
+21-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:26:22-79
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:6:5-75
+22-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:6:22-73
+23    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+24
+25    <application
+26        android:name="android.app.Application"
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.8.0] C:\Users\sushi\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+30        android:label="zakira"
+31        android:supportsRtl="true" >
+31-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:7:18-44
+32        <activity
+33            android:name="com.example.zakira.MainActivity"
+34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35            android:exported="true"
+36            android:hardwareAccelerated="true"
+37            android:launchMode="singleTop"
+38            android:theme="@style/LaunchTheme"
+39            android:usesCleartextTraffic="true"
+40            android:windowSoftInputMode="adjustResize" >
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                 the Android process has started. This theme is visible to the user
+45                 while the Flutter UI initializes. After that, this theme continues
+46                 to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+49                android:name="io.flutter.embedding.android.NormalTheme"
+50                android:resource="@style/NormalTheme" />
+51
+52            <intent-filter>
+53                <action android:name="android.intent.action.MAIN" />
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+56            </intent-filter>
+57        </activity>
+58        <!--
+59             Don't delete the meta-data below.
+60             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+61        -->
+62        <meta-data
+63            android:name="flutterEmbedding"
+64            android:value="2" />
+65
+66        <service
+66-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+67            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+67-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+68            android:exported="false"
+68-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+69            android:permission="android.permission.BIND_JOB_SERVICE" />
+69-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+70        <service
+70-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+71            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+71-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+72            android:exported="false" >
+72-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+73            <intent-filter>
+73-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+74                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+74-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+74-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+75            </intent-filter>
+76        </service>
+77
+78        <receiver
+78-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+79            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+79-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+80            android:exported="true"
+80-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+81            android:permission="com.google.android.c2dm.permission.SEND" >
+81-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+82            <intent-filter>
+82-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+83                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+83-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+83-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+84            </intent-filter>
+85        </receiver>
+86
+87        <service
+87-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
+88            android:name="com.google.firebase.components.ComponentDiscoveryService"
+88-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
+89            android:directBootAware="true"
+89-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:34:13-43
+90            android:exported="false" >
+90-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:31:13-37
+91            <meta-data
+91-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+92-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+94            <meta-data
+94-->[:firebase_core] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+95-->[:firebase_core] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[:firebase_core] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+97            <meta-data
+97-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+98                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+98-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\sushi\.gradle\caches\transforms-3\b88ed1018c8aaed9c63957bf5076091d\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:55:13-57:85
+101                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+101-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:56:17-119
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:57:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-installations:17.1.2] C:\Users\sushi\.gradle\caches\transforms-3\92bbd9f206a55a5ca4d55f40ccfea7f1\transformed\jetified-firebase-installations-17.1.2\AndroidManifest.xml:17:13-19:85
+104                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+104-->[com.google.firebase:firebase-installations:17.1.2] C:\Users\sushi\.gradle\caches\transforms-3\92bbd9f206a55a5ca4d55f40ccfea7f1\transformed\jetified-firebase-installations-17.1.2\AndroidManifest.xml:18:17-127
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-installations:17.1.2] C:\Users\sushi\.gradle\caches\transforms-3\92bbd9f206a55a5ca4d55f40ccfea7f1\transformed\jetified-firebase-installations-17.1.2\AndroidManifest.xml:19:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\sushi\.gradle\caches\transforms-3\86163f826fa791706f81b7f9c975ba06\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+107                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+107-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\sushi\.gradle\caches\transforms-3\86163f826fa791706f81b7f9c975ba06\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\sushi\.gradle\caches\transforms-3\86163f826fa791706f81b7f9c975ba06\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+109        </service>
+110
+111        <provider
+111-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+112            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+112-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+113            android:authorities="com.example.zakira.flutterfirebasemessaginginitprovider"
+113-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+114            android:exported="false"
+114-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+115            android:initOrder="99" />
+115-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+116        <provider
+116-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+117            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+117-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+118            android:authorities="com.example.zakira.flutter.image_provider"
+118-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+119            android:exported="false"
+119-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+120            android:grantUriPermissions="true" >
+120-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+121            <meta-data
+121-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+122                android:name="android.support.FILE_PROVIDER_PATHS"
+122-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+123                android:resource="@xml/flutter_image_picker_file_paths" />
+123-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+124        </provider>
+125        <provider
+125-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:12:9-20:20
+126            android:name="com.sangcomz.fishbun.FishBunFileProvider"
+126-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:13:13-68
+127            android:authorities="com.example.zakira.fishbunfileprovider"
+127-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:14:13-71
+128            android:exported="false"
+128-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:15:13-37
+129            android:grantUriPermissions="true" >
+129-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:16:13-47
+130            <meta-data
+130-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+131                android:name="android.support.FILE_PROVIDER_PATHS"
+131-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+132                android:resource="@xml/provider_paths" />
+132-->[:image_picker_android] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+133        </provider>
+134
+135        <activity
+135-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:22:9-25:51
+136            android:name="com.sangcomz.fishbun.ui.album.AlbumActivity"
+136-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:23:13-71
+137            android:label="@string/album"
+137-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:24:13-42
+138            android:theme="@style/FishBunTheme" />
+138-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:25:13-48
+139        <activity
+139-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:26:9-28:51
+140            android:name="com.sangcomz.fishbun.ui.picker.PickerActivity"
+140-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:27:13-73
+141            android:theme="@style/FishBunTheme" />
+141-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:28:13-48
+142        <activity
+142-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:29:9-31:54
+143            android:name="com.sangcomz.fishbun.ui.detail.DetailActivity"
+143-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:30:13-73
+144            android:theme="@style/DetailViewTheme" />
+144-->[com.sangcomz:FishBun:0.11.2] C:\Users\sushi\.gradle\caches\transforms-3\ef69ee4910190a3ffd0e4760174dca1f\transformed\jetified-FishBun-0.11.2\AndroidManifest.xml:31:13-51
+145
+146        <uses-library
+146-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+147            android:name="androidx.window.extensions"
+147-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+148            android:required="false" />
+148-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+149        <uses-library
+149-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+150            android:name="androidx.window.sidecar"
+150-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+151            android:required="false" />
+151-->[androidx.window:window:1.0.0-beta04] C:\Users\sushi\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+152
+153        <receiver
+153-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:31:9-38:20
+154            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+154-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:32:13-78
+155            android:exported="true"
+155-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:33:13-36
+156            android:permission="com.google.android.c2dm.permission.SEND" >
+156-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:34:13-73
+157            <intent-filter>
+157-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+158                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+158-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+158-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+159            </intent-filter>
+160        </receiver>
+161        <!--
+162             FirebaseMessagingService performs security checks at runtime,
+163             but set to not exported to explicitly avoid allowing another app to call it.
+164        -->
+165        <service
+165-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:44:9-51:19
+166            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+166-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:45:13-82
+167            android:directBootAware="true"
+167-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:46:13-43
+168            android:exported="false" >
+168-->[com.google.firebase:firebase-messaging:23.1.1] C:\Users\sushi\.gradle\caches\transforms-3\1543aaf1bf9f75dbc30ed507d081896e\transformed\jetified-firebase-messaging-23.1.1\AndroidManifest.xml:47:13-37
+169            <intent-filter android:priority="-500" >
+169-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+170                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+170-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+170-->[:firebase_messaging] C:\Users\sushi\OneDrive\Desktop\office project\zakira\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+171            </intent-filter>
+172        </service>
+173
+174        <provider
+174-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
+175            android:name="com.google.firebase.provider.FirebaseInitProvider"
+175-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:26:13-77
+176            android:authorities="com.example.zakira.firebaseinitprovider"
+176-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:27:13-72
+177            android:directBootAware="true"
+177-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:28:13-43
+178            android:exported="false"
+178-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:29:13-37
+179            android:initOrder="100" />
+179-->[com.google.firebase:firebase-common:20.3.0] C:\Users\sushi\.gradle\caches\transforms-3\af8db2ff2177352587b9606c0aa3ed71\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:30:13-36
+180
+181        <activity
+181-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+182            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+182-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+183            android:excludeFromRecents="true"
+183-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+184            android:exported="false"
+184-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+185            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+185-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+186        <!--
+187            Service handling Google Sign-In user revocation. For apps that do not integrate with
+188            Google Sign-In, this service will never be started.
+189        -->
+190        <service
+190-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+191            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+191-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+192            android:exported="true"
+192-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+193            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+193-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+194            android:visibleToInstantApps="true" />
+194-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\sushi\.gradle\caches\transforms-3\3535be8f62b8f6744ac9d5afbd552ab5\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+195
+196        <activity
+196-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sushi\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+197            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+197-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sushi\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+198            android:exported="false"
+198-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sushi\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+199            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+199-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sushi\.gradle\caches\transforms-3\3ff720be07735976176520d1c05fb799\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+200
+201        <meta-data
+201-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sushi\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+202            android:name="com.google.android.gms.version"
+202-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sushi\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+203            android:value="@integer/google_play_services_version" />
+203-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sushi\.gradle\caches\transforms-3\6b0daa5fb4c2eb7e8b55778df9b972f6\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+204
+205        <service
+205-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+206            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+206-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+207            android:exported="false" >
+207-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+208            <meta-data
+208-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+209                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+209-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+210                android:value="cct" />
+210-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\c728461e4a12f7993de433fc32ef8659\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+211        </service>
+212        <service
+212-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+213            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+213-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+214            android:exported="false"
+214-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+215            android:permission="android.permission.BIND_JOB_SERVICE" >
+215-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+216        </service>
+217
+218        <receiver
+218-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+219            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+219-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+220            android:exported="false" />
+220-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\sushi\.gradle\caches\transforms-3\ce7a7fecad80157ffb91d8aaf45dc5c8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+221
+222        <activity
+222-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:10-269
+223            android:name="com.amazonaws.mobile.auth.userpools.ForceChangePasswordActivity"
+223-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:152-230
+224            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+224-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:20-90
+225            android:label="@string/title_activity_force_change_password"
+225-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:91-151
+226            android:screenOrientation="portrait" />
+226-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:9:231-267
+227        <activity
+227-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:10-258
+228            android:name="com.amazonaws.mobile.auth.userpools.ForgotPasswordActivity"
+228-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:146-219
+229            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+229-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:20-90
+230            android:label="@string/title_activity_forgot_password"
+230-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:91-145
+231            android:screenOrientation="portrait" />
+231-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:10:220-256
+232        <activity
+232-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:10-242
+233            android:name="com.amazonaws.mobile.auth.userpools.SignUpActivity"
+233-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:138-203
+234            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+234-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:20-90
+235            android:label="@string/title_activity_sign_up"
+235-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:91-137
+236            android:screenOrientation="portrait" />
+236-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:11:204-240
+237        <activity
+237-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:10-235
+238            android:name="com.amazonaws.mobile.auth.userpools.MFAActivity"
+238-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:134-196
+239            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+239-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:20-90
+240            android:label="@string/title_activity_mfa"
+240-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:91-133
+241            android:screenOrientation="portrait" />
+241-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:13:197-233
+242        <activity
+242-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:10-257
+243            android:name="com.amazonaws.mobile.auth.userpools.SignUpConfirmActivity"
+243-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:146-218
+244            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+244-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:20-90
+245            android:label="@string/title_activity_sign_up_confirm"
+245-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:91-145
+246            android:screenOrientation="portrait" />
+246-->[com.amazonaws:aws-android-sdk-auth-userpools:2.16.6] C:\Users\sushi\.gradle\caches\transforms-3\4ff3dfe2a09efee0461698adadeae05b\transformed\jetified-aws-android-sdk-auth-userpools-2.16.6\AndroidManifest.xml:15:219-255
+247        <activity
+247-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:9-234
+248            android:name="com.amazonaws.mobile.auth.ui.SignInActivity"
+248-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:137-195
+249            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+249-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:19-89
+250            android:label="@string/title_activity_sign_in"
+250-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:90-136
+251            android:screenOrientation="portrait" />
+251-->[com.amazonaws:aws-android-sdk-auth-ui:2.6.10] C:\Users\sushi\.gradle\caches\transforms-3\235273d8963182c647eca21abc6b4a4a\transformed\jetified-aws-android-sdk-auth-ui-2.6.10\AndroidManifest.xml:8:196-232
+252    </application>
+253
+254</manifest>

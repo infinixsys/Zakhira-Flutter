@@ -1,0 +1,33 @@
+class Config {
+  static const String baseapiUrl = "http://35.154.124.131:3000";
+  static const String registerApi = "/api/auth/register";
+  static const String loginApi = "/api/auth/login";
+  static const String sendOtpApi = "/api/auth/sendOtp";
+  static const String vrifyOtp = "/api/auth/verify";
+  static const String uploadShorts = "/api/v1/user/upload/shorts";
+  static const String getProfile = "/api/v1/user/my_profile";
+  static const String fcmApi = "/api/v1/fcmToken";
+  static const String aboutUsApi = "/api/v1/user/about_us";
+  static const String privacyPolicyApi = "/api/v1/user/privacy_policy";
+  static const String updateProfileApi = "/api/v1/user/my_profile";
+  static const String homeproduct = "/api/v1/users/home?limit=50&page=1";
+  static const String SellerStoryApi = "/api/v1/home_story";
+  static const String S3Api = "/api/auth/s3_credentials";
+  static const String S3BaseApi = "/api/auth/base_s3";
+  static const String addProductApi = "/api/v1/users/add_product";
+  static const String changePasswordApi = "/api/auth/change_password";
+  static const String allCategoryApi = "/api/v1/users/all_category";
+  static const String allProductApi = "/api/v1/users/products?limit=5&page=1";
+  static const String editProductApi = "/api/v1/users/edit_product/";
+  static const String deletProductApi = "/api/v1/users/delete_product/"; 
+  static const String getStatatApi = "/api/v1/users/all_states";
+  static const String getCityApi = "/api/v1/users/all_cities/";
+  static const String saveAddressApi = "/api/v1/users/save_address";
+  static const String getAddressApi = "/api/v1/users/address";
+  static const String getSingleAddressApi = "/api/v1/users/address/";
+  static const String getdeleteAddressApi = "/api/v1/users/address/";
+  static const String getUpdateAddressApi = "/api/v1/users/address/";
+  static const String getAllTax = "/api/v1/users/tax";
+  static const String bookNowApi = "/api/v1/users/book_now";
+  static const String allSubCategory = "/api/v1/users/all_category/";
+}

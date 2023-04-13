@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "677659661798",
+    "project_id": "zakhira-46d1e",
+    "storage_bucket": "zakhira-46d1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677659661798:android:cb84f6bb60285a463df227",
+        "android_client_info": {
+          "package_name": "com.example.zakira"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677659661798-pn3561j8oflo15gskk4gd1htssef951s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYeSqp3jrB4nx-dTsDzZvtVwqgY9Z-Jts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677659661798-pn3561j8oflo15gskk4gd1htssef951s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

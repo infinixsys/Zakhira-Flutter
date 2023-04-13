@@ -1,0 +1,10 @@
+^C:\USERS\SUSHI\ONEDRIVE\DESKTOP\OFFICE PROJECT\ZAKIRA\BUILD\WINDOWS\CMAKEFILES\54E8C1B3878602CA6BEE7924190B9258\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/sushi/OneDrive/Desktop/office project/zakira/windows" "-BC:/Users/sushi/OneDrive/Desktop/office project/zakira/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/sushi/OneDrive/Desktop/office project/zakira/build/windows/zakira.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
